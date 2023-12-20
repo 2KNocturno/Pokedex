@@ -1,11 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+@font-face {
+  font-family:'fac';
+  src: url(./fonts/Pokemon\ Hollow.ttf);
+}
+
 body {
     background-color: orangered;
-    margin: 0;
-    font-family: sans-serif;
-    src: ;
+    font-family: 'fac';
     color: white;
     padding-top: 0px;
+    background-image: url(./img/latest.jpg);
   }
+
+  header {
+    top: 0;
+    margin-top: 0;
+    background-image: url(./img/fondo\ types.jpg);
+  }
+
   .container {
     padding: 60px;
     margin: 0 auto;
@@ -15,21 +32,28 @@ body {
     text-align: center;
     font-size: 70px;
   }
+
+  .card {
+    padding-bottom: 40px;
+  }
+
   .card-front {
     list-style: none;
     width: 225px;
     height: 179px;
-    padding: 40px;
+    padding: 60px;
     border-radius: 10px;
     background-color: #f4f4f4;
+    background-image: url(./img/fondo\ pokemon.jpg);
     color: #222;
     text-align: center;
   }
   .card_title {
     text-transform: uppercase;
-    font-size: 32px;
-    font-weight: normal;
+    font-size: 23px;
     margin-bottom: 0;
+    background-color: indianred;
+    border-radius: 20px;
   }
   .card-subtitle {
     font-weight: lighter;
@@ -38,6 +62,20 @@ body {
   }
   .card-image {
     height: 180px;
+  }
+
+.card__type{
+  text-transform: uppercase;
+  color: white;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+
+  .card-front > img {
+    font-size: 40px;
+    width: 150px;
+    height: 150px;
   }
   #pokedex {
     padding-inline-start: 0;

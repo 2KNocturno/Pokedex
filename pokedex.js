@@ -36,8 +36,7 @@ const pintar = (digimones) => {
     <div class = 'card-front'>
       <h2 class = 'card_title'>${pokemanco.name}</h2>
       <img src = '${pokemanco.image}' alt = '${pokemanco.name}' class='card__img'>
-      <div class = 'card__type'></div>
-      
+      <div class = 'card__type'>${pokemanco.type}</div>
       
       </div>
     `;
